@@ -1,1 +1,1 @@
-import './record.spec';
+import './records.spec';
