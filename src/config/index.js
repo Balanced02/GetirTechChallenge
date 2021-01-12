@@ -9,8 +9,8 @@ const config = {
 const dbUrl = NODE_ENV === "test" ? config.test : config.development;
 
 export default () =>
-  mongoose.connect(
-    dbUrl,
-    { useNewUrlParser: true, useUnifiedTopology: true },
-    () => console.log("Database connected")
-  );
+  mongoose
+    .connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true })
+    .then(() => {
+      console.log("Database Connected successfully");
+    });

@@ -1,20 +1,6 @@
 const filterRecordCases = [
   {
     body: {
-      startDate: "2016-01-01",
-      endDate: "2016-10-01",
-      minCount: 10,
-      maxCount: 50,
-    },
-    result: {
-      code: 0,
-      statement: "It should fetch data",
-      msg: "Success",
-      status: 200,
-    },
-  },
-  {
-    body: {
       startDate: "2015-07a",
       endDate: "2017-05-25",
       minCount: 2500,
